@@ -32,6 +32,7 @@ matrix:
     - language: generic
       env: RUN=unit PY=3
       os: osx
+      osx_image: xcode9.3
 
 before_install:
   # https://github.com/travis-ci/travis-ci/issues/6307
