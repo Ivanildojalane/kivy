@@ -92,8 +92,8 @@ install:
       chmod -R 755 /usr/local/share/platypus;
       curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py;
       if [ "${PY}" == "3" ]; then
-         curl -O -L https://www.python.org/ftp/python/3.5.2/python-3.5.2-macosx10.6.pkg;
-         sudo installer -package python-3.5.2-macosx10.6.pkg -target /;
+         curl -O -L https://www.python.org/ftp/python/3.6.5/python-3.6.5-macosx10.9.pkg;
+         sudo installer -package python-3.6.5-macosx10.6.pkg -target /;
          python3 get-pip.py --user;
          python3 -m pip install --upgrade --user cython pillow nose mock docutils;
       else
